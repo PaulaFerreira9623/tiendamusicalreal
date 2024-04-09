@@ -7,27 +7,38 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.dev</groupId>
   <artifactId>tiendamusical-services</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  
 
   <name>tiendamusical-services</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
 
   <dependencies>
+	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.5</version> <!-- O la versión más reciente disponible -->
+</dependency>
+
+    <!-- :::::Integrando la dependencia del proyecto tiendamusical-data ::: -->
+    <dependency>
+    <groupId>com.dev</groupId>
+    <artifactId>tiendamusical-data</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+    
+    
   </dependencies>
 
   <build>
